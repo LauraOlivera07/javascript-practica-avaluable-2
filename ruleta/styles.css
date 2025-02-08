@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.ruleta-container {
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+canvas {
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.pastel-colors {
+    --pastel-1: #4de98e;
+    --pastel-2: #f594d8;
+    --pastel-3: #79b3ff;
+    --pastel-4: #ffba82;
+    --pastel-5: #88e695;
+    --pastel-6: #a09afc;
+    --pastel-7: #8df7d3;
+    --pastel-8: #fffd98;
+}
+
+canvas {
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+canvas {
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+canvas {
+    width: 300px;
+    height: 300px;
+}
+
+.ruleta-container {
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#resultat {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #9c7df1; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
+    margin-top: 20px;
+}
