@@ -1,0 +1,113 @@
+/* Fuente personalizada para el reloj y la cuenta atrás */
+@font-face {
+    font-family: "clockicons";
+    src: url("https://db.onlinewebfonts.com/t/84cb021d5f9af287ffff84b61beef6dc.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+    
+    /* Centrado del contenido de la página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Utilizamos el 100% de la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Estilo del contenedor */
+.container {
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Estilo del reloj digital con tono naranja */
+.digital-clock {
+    font-size: 2.5em;
+    font-family: "clockicons", sans-serif;
+    margin: 15px 0;
+    color: orange; /* Color de la hora en naranja */
+}
+
+/* Estilo de la cuenta atrás con números dinámicos en naranja */
+#countdown {
+    font-size: 2em;
+    font-family: "clockicons", sans-serif;
+    margin-top: 20px;
+    color: orange;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+}
+
+/* Estilo de los controles */
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+label, input, button, select {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 5px;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: orange; /* El color de fondo de los botones ahora será naranja */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e55b00; /* Color más oscuro al pasar el ratón */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    background-color: #cc5200; /* Color más oscuro al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modo oscuro */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #000;
+    --container-bg: white;
+}
+
+.dark-mode {
+    --background-color: #222;
+    --text-color: #fff;
+    --container-bg: #333;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    background: var(--container-bg);
+}
