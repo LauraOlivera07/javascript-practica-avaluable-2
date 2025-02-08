@@ -38,7 +38,6 @@ function updateCountdown() {
             if (remainingTime <= 0) {
                 clearInterval(countdownInterval);
                 displayTime(0); // Asegura que el contador muestre 00:00:00
-                alert('La cuenta atrás ha terminado!');
                 playSound();
             } else {
                 displayTime(remainingTime);
