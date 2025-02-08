@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellotge Temporitzador</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="clock.js"></script>
+    <script defer src="timer.js"></script>
+    <script defer src="theme.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Rellotge Temporitzador</h1>
+        
+        <!-- Hora actual -->
+        <div id="clock" class="digital-clock"></div>
+        
+        <div class="controls">
+            <!-- Controls per el temporizador -->
+            <label for="timeInput">Alarma :</label>
+            <input type="time" id="timeInput">
+            
+            <label for="durationInput">Temporitzador (HH:MM:SS):</label>
+            <input type="text" id="durationInput" placeholder="00:00:00">
+            
+            <button onclick="startTimer()">Iniciar Temporitzador</button>
+            <button id="pauseButton" onclick="pauseTimer()">Pausar</button>
+        </div>
+        
+        <!-- Compte enrere -->
+        <div id="countdown"></div>
+        
+        <div class="controls">
+            <!-- Selecció de so -->
+            <label for="soundSelect">Selecciona un so:</label>
+            <select id="soundSelect">
+                <option value="alarm.mp3">Alarma</option>
+                <option value="meme.mp3">Meme sound</option>
+                <option value="good_morning.mp3">Good morning</option>
+            </select>
+            
+            <!-- Botó per canviar el tema -->
+            <button id="themeToggle">Canviar Tema</button>
+        </div>
+    </div>
+</body>
+</html>
