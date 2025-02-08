@@ -39,7 +39,7 @@ function drawRoulette(names, currentAngle = 0) {
     });
     ctx.restore();
 
-    // Dibujar una flecha más estilizada
+    // Dibujar una flecha
     ctx.fillStyle = "black";
     ctx.beginPath();
     ctx.moveTo(295, 145);
